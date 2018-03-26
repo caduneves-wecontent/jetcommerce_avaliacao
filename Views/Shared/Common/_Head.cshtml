@@ -11,15 +11,6 @@
                     </a>
                 </div>
                 <div class="ui center aligned five wide tablet eight wide computer column searchcolumn">
-                    <div class="ui category @_classSearch">
-                        <div class="ui icon input fluid">
-                            <input class="prompt" type="text" placeholder="Buscar...">
-                            <i class="search icon"></i>
-                        </div>
-                        <div class="results"></div>
-                    </div>
-                </div>
-                <div class="ui right aligned six wide mobile five wide tablet four wide computer column">
                     <div id="cartButton" class="ui labeled button cartbutton mini-cart no margin bottom" tabindex="0" data-segment="@(Session["segment"] != null ? Session["segment"] : "b2c")">
                         <div class="ui basic primary button ">
                             <i class="cart icon"></i>
@@ -37,6 +28,15 @@
                             }
                             
                         </a>
+                    </div>
+                </div>
+                <div class="ui right aligned six wide mobile five wide tablet four wide computer column">
+                    <div class="ui category @_classSearch">
+                        <div class="ui icon input fluid">
+                            <input class="prompt" type="text" placeholder="Encontre seu produto...">
+                            <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
                     </div>
                 </div>
             </div>

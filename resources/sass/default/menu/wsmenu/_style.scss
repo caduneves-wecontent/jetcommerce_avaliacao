@@ -1,12 +1,12 @@
 @import "colors";
 
 .wsmenu {
-    float: left;
+    float: right;
     min-height: $menuHeight;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 100%;
+    /*width: 100%;*/
 
     * {
         box-sizing: border-box;

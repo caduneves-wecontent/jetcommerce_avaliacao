@@ -240,9 +240,7 @@
             <div class="ui divider hidden"></div>
             <!-- COMEÇO INFORMAÇÕES DO PRODUTO-->
             <div class="sixteen wide mobile seven wide computer column infoProduto">
-                <div class="ui grid">
-                    <div class="computer only row product information">
-                        <div class="column">
+                <div class=<div class="column">
                             <h1 itemprop="name" class="nomeProduto" id="produto-nome">@Model.Name</h1>
                             @if (@Model.Brand != null)
                             {
@@ -252,21 +250,8 @@
                             {
                                 <h5 itemprop="productBrand" class="marcaProduto"></h5>
                             }
-                            <div class="ui two column grid">
-                                <div class="column">
-                                    <h6 itemprop="productID" class="codProduto">@Model.Code</h6>
-                                </div>
-                                <div class="column">
-                                    <div class="ui tiny star rating" data-rating="@Model.Rate.Value"></div>
-                                    <div id="avaliacoes">
-                                        <a href="#avaliacoes">
-                                            @(Model.ProductRatings != null ? Model.ProductRatings.Count() : 0) avaliações
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
+
                     <!--COMEÇO DICA DE COMPRA-->
                     <div id="dica_compra_partial">
                         @Html.Action("BuyingTips", "Product", new { productID = @Model.IdProduct, skuID = SKUPadrao != null ? SKUPadrao.IdSku : 0 })
@@ -475,6 +460,21 @@
                                     <div class="addthis_inline_share_toolbox"></div>
                                 </div>
                             </div>
+                            <div class="column">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <div class="ui tiny star rating" data-rating="@Model.Rate.Value"></div>
+                                    <div id="avaliacoes">
+                                        <a href="#avaliacoes">
+                                            @(Model.ProductRatings != null ? Model.ProductRatings.Count() : 0) avaliações
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <h6 itemprop="productID" class="codProduto">@Model.Code</h6>
+                                </div>
+                            </div>
+                        </div>
                             <!-- FIM REDES SOCIAIS-->
                         </div>
                     </div>

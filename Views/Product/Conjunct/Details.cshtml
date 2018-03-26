@@ -282,20 +282,6 @@
                                 </div>
                                 <div class="ui divider"></div>
                                 <!--FIM VARIAÇÔES-->
-                                <div class="row one column ">
-                                    <div class="column text right" itemprop="offers" id="block-price" itemscope="" itemtype="http://schema.org/Offer">
-                                        <span class="precoAntigo">
-                                            Sub-Total: <span id="conjunto-total"></span>
-                                            <br />
-                                            <span>Desconto: <span id="conjunto-desconto">R$ 0,00</span></span>
-                                        </span>
-                                        <span itemprop="price" class="preco">
-                                            <span id="conjunto-total-final"></span>
-                                        </span>
-                                    </div>
-                                    <!--FIM GRADE-->
-                                    <div class="ui divider hidden"></div>
-                                </div>
                                 <!--COMEÇO DISPONIBILIDADE / CARRINHO-->
                                 <div class="row">
                                     <div class="column" id="btn_compre_conjunto_selecionado">
@@ -316,6 +302,20 @@
                                     </div>
                                 </div>
                                 <!--FIM DISPONIBILIDADE / CARRINHO-->
+                                <div class="row one column ">
+                                    <div class="column text right" itemprop="offers" id="block-price" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="precoAntigo">
+                                            Sub-Total: <span id="conjunto-total"></span>
+                                            <br />
+                                            <span>Desconto: <span id="conjunto-desconto">R$ 0,00</span></span>
+                                        </span>
+                                        <span itemprop="price" class="preco">
+                                            <span id="conjunto-total-final"></span>
+                                        </span>
+                                    </div>
+                                    <!--FIM GRADE-->
+                                    <div class="ui divider hidden"></div>
+                                </div>
                             </div>
                             @if (!Model.FlagExhausted)
                             {
